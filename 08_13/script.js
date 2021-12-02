@@ -13,7 +13,7 @@ const everydayPack = new Backpack(
   26,
   26,
   false,
-  "December 5, 2018 15:00:00 PST",
+  "December 5, 2020 15:00:00 PST",
   "../assets/images/everyday.svg"
 );
 
@@ -57,19 +57,33 @@ main.append(newArticle);
 const usedStatus = () => {
   let age = everydayPack.backpackAge();
   let description;
-  if (age >= 30) {
-    if (age >= 365) {
-      if (age >= 1095) {
-        description = "old";
-      } else {
-        description = "used";
-      }
-    } else {
+  // Conditional complex statement made with case
+  switch (true) {
+    case age < 30:
+      description = "new";
+      break;
+    case age < 365:
       description = "lightly used";
-    }
-  } else {
-    description = "new";
+      break;
+    case age < 1095:
+      description = "used";
+      break;
+    default:
+      description = "old";
   }
+  // if (age >= 30) {
+  //   if (age >= 365) {
+  //     if (age >= 1095) {
+  //       description = "old";
+  //     } else {
+  //       description = "used";
+  //     }
+  //   } else {
+  //     description = "lightly used";
+  //   }
+  // } else {
+  //   description = "new";
+  // }
 
   console.log(`
   Age: ${age} days
@@ -77,4 +91,4 @@ const usedStatus = () => {
   `);
 };
 
-usedStatus()
+usedStatus();
