@@ -47,5 +47,15 @@ const whatITalk = new Book(
 console.log(`I've enjoid "${whatITalk.name}", by ${whatITalk.author}`);
 console.log("This book is", whatITalk.bookAge(), "years old.");
 
+// Test how to access a varible property inside an object
+let propName = "color";
+const myObject = {
+  ID: 3,
+  color: "pink",
+  propLength: 4,
+  use: false,
+};
+console.log(myObject[propName]);
+
 window.eloquent = eloquent;
 window.whatITalk = whatITalk;

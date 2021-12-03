@@ -1,4 +1,4 @@
-class Book {
+const Book = class {
   constructor(name, author, category, pages, status, datePublished) {
     this.name = name;
     this.author = author;
@@ -18,6 +18,6 @@ class Book {
     let yearsSincePublished = Math.floor(elapsed / (1000 * 3600 * 24 * 356));
     return yearsSincePublished;
   }
-}
+};
 
 export default Book;
