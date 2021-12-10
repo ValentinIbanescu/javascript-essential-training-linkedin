@@ -11,6 +11,19 @@ console.log(`let a: ${a} (${typeof a})`);
 console.log(`let b: ${b} (${typeof b})`);
 console.log(`let c: ${c} (${typeof c})`);
 
-let result = a + b;
+let resultModulo = a % c;
+let resultExpo = a ** b;
+// let resultDecrease = --a;
+let resultAdd = ++a;
+let resultIncrease = a++;
 
-console.log("Result: ", result);
+console.log("Result add: ", resultAdd);
+//The Add operation takes place on the spot.
+console.log(a);
+
+console.log("Result: ", resultModulo);
+console.log("Result: ", resultExpo);
+// console.log("Result: ", resultDecrease);
+console.log("Result increment: ", resultIncrease);
+// Incrementing a number operation. The result is visible in the value of the number.
+console.log(a);
