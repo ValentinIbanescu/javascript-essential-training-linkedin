@@ -27,3 +27,19 @@ console.log("Result: ", resultExpo);
 console.log("Result increment: ", resultIncrease);
 // Incrementing a number operation. The result is visible in the value of the number.
 console.log(a);
+
+var defaultColor = "purple";
+
+function setColor() {
+  if (defaultColor === "purple") {
+    let defaultColor = "orange";
+  }
+}
+
+setColor();
+console.log("Defaul color is:", defaultColor);
+
+let sum = 23.95;
+let tip = "3";
+
+console.log("The total is $" + sum + tip + ".");
