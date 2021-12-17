@@ -36,7 +36,6 @@ const frogpack = {
 };
 
 // Baseline HTML output
-
 const content = `
 <h1 class="backpack__name">${frogpack.name}</h1>
 <ul class="backpack__features">
@@ -76,10 +75,6 @@ const newBag = (object) => {
   newArticle.prepend(addFigure(object));
   return newArticle;
 };
-// const newArticle = function (newName, newVolume, newColor) {
-//   document.createElement("article");
-//   return (newArticle.innerHTML = newBag(newName, newVolume, newColor));
-// };
 
 document.querySelector("main").appendChild(newBag(frogpack));
 document.querySelector("figure").classList.add("backpack__image");
