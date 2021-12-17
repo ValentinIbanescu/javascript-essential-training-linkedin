@@ -13,7 +13,7 @@ const everydayPack = new Backpack(
   15,
   26,
   26,
-  false,
+  true,
   "December 5, 2018 15:00:00 PST",
   "../assets/images/everyday.svg"
 );
@@ -41,7 +41,7 @@ const content = `
       everydayPack.strapLength.right
     } inches</span></li>
     <li class="feature backpack__lid">Lid status:<span> ${
-      everydayPack.lidOpen
+      everydayPack.lidOpen ? "open" : "closed"
     }</span></li>
   </ul>
 `;
@@ -54,3 +54,13 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+if (everydayPack.lidOpen) {
+  console.log("Lid is open");
+} else {
+  console.log("Lid is closed");
+}
+
+everydayPack.lidOpen
+  ? console.log("Lid is open")
+  : console.log("Lid is closed");
