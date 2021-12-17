@@ -14,7 +14,7 @@ const everydayPack = new Backpack(
   26,
   26,
   false,
-  "December 5, 2018 15:00:00 PST",
+  "January 17, 2022 15:00:00 PST",
   "../assets/images/everyday.svg"
 );
 
@@ -56,7 +56,13 @@ newArticle.innerHTML = content;
 main.append(newArticle);
 
 if (everydayPack.backpackAge() >= 30) {
-  console.log("Backpack is used")
+  console.log("Backpack is used");
 } else {
-  console.log("Backpack is new")
+  console.log("Backpack is new");
+}
+
+if (everydayPack.volume >= 35 || everydayPack.pocketNum > 5) {
+  console.log("Backpack is big");
+} else {
+  console.log("Backpack is small");
 }
