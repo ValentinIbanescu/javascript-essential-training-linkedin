@@ -17,6 +17,21 @@ figure {
   margin: 0;
 }
 
+.rotated {
+  transform: rotate(45deg);
+  width: 50%;
+}
+
+.rotated:hover {
+  transform: rotate(0deg);
+  width: 70%;
+}
+
+.border {
+  border: 10px solid #af4e21;
+  border-radius: 10px;
+}
+
 .siteheader {
   display: flex;
   flex-direction: column;
