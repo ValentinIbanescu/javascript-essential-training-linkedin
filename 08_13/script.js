@@ -13,7 +13,7 @@ const everydayPack = new Backpack(
   26,
   26,
   false,
-  "December 5, 2020 15:00:00 PST",
+  "December 5, 2021 15:00:00 PST",
   "../assets/images/everyday.svg"
 );
 
