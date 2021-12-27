@@ -8,7 +8,7 @@ import backpackObjectArray from "./components/data.js";
 /**
  * Add event listener to the lid-toggle button.
  */
-const lidToggle = function () {
+const lidToggle = function (event) {
   // Find the current backpack object in backpackObjectArray
   let backpackObject = backpackObjectArray.find(
     ({ id }) => id === this.parentElement.id
@@ -29,6 +29,9 @@ const lidToggle = function () {
   status.innerText == "closed"
     ? (status.innerText = "open")
     : (status.innerText = "closed");
+
+  // Passed the event argument to the callback function.
+  console.log(event);
 };
 
 /**
