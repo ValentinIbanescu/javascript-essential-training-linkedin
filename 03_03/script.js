@@ -20,3 +20,5 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+backpack.volume = 40;
