@@ -12,6 +12,7 @@ const backpack = {
   volume: 30,
   color: "grey",
   pocketNum: 15,
+  lidOpen: false,
   strapLength: {
     left: 26,
     right: 26,
@@ -23,4 +24,20 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  renameBackpack: function (newName) {
+    this.name = newName;
+  },
+  expandVolume: function (newVolume) {
+    this.volume = newVolume;
+  },
+  addPockets: function (extraPockets) {
+    this.pocketNum += extraPockets;
+  },
 };
+
+console.log(
+  " This backpack is named",
+  backpack.name,
+  "and it contains:",
+  backpack
+);
