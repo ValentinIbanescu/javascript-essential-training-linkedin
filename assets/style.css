@@ -32,10 +32,10 @@ figure {
   font-weight: 200;
 }
 
-.siteheader:after {
+.siteheader::after {
   display: block;
   margin: 4rem 0;
-  content: "⚍⚌⚍";
+  content: "⚍⚌⚍ 4";
 }
 
 .maincontent {
