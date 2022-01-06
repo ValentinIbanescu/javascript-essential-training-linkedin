@@ -51,3 +51,19 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+// Playing with the querySelector methods
+// Select nested elements by tag, last child
+document.querySelector("main li:last-child span").style.color = "red";
+// Selects element by id
+document.querySelector("#everyday").style.backgroundColor = "yellow";
+// Select 1st element by class
+document.querySelector(".packprop").style.color = "green";
+// Select 1st element with both classes
+document.querySelector(".packprop.backpack__strap").style.color = "blue";
+// Select all elements with both classes
+document
+  .querySelectorAll(".packprop.backpack__strap")
+  .forEach((item) => (item.style.color = "blue"));
+// Selects elements with .class2 that is a descendant of an element with .class1
+document.querySelector(".siteheader .site-description").style.color = "yellow";
