@@ -2,6 +2,16 @@
  * Note: This file is intentionally empty.
  * You can use it to test your skills at traversing the DOM using JavaScript.
  */
+const heading = document.querySelector(".siteheader");
+
+const descClass = "site-description";
+
+const content = `
+<div class="site-title">BackpackPacker</div>
+<div class="${descClass}"><h2>All backpack packing, all the time.</h2><h6>Special Edition</h6></div>
+`;
+
+heading.innerHTML = content;
 
 document.querySelectorAll("h1").forEach((item) => (item.style.color = "red"));
 
@@ -28,3 +38,9 @@ document.querySelector("#pack02 li:nth-child(5) span").style.color = "blue";
 document
   .querySelectorAll("#pack01 li:nth-child(odd)")
   .forEach((item) => (item.style.color = "red"));
+
+// Access an element injected through a variable
+document.querySelector(".site-description > h6").style.color = "green";
+
+// Nested elements
+document.querySelector("footer a").style.textDecoration = "none";
