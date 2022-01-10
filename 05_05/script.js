@@ -51,3 +51,19 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+document.querySelector("img").hasAttribute("src");
+
+document.querySelector("img").getAttribute("src");
+
+document
+  .querySelector("img")
+  .setAttribute("alt", "backpack black and white image");
+
+document.querySelector("img").setAttribute("title", "This shouldn't be here.");
+
+console.log(document.querySelector("img").getAttribute("title"));
+
+document.querySelector("img").removeAttribute("title");
+
+console.log(document.querySelector("img").getAttribute("alt"));
