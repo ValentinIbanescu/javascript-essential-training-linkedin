@@ -51,3 +51,16 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+console.log(
+  `Style object: ${document.querySelector("header .site-title").style}`
+);
+
+document.querySelector("header .site-title").style.color = "Magenta";
+
+document.querySelector("header .site-title").style.backgroundColor = "yellow";
+
+// New style object contains new style as: cssText: "color: magenta; background-color: yellow;";
+console.log(
+  `New style object: ${document.querySelector("header .site-title").style}`
+);
