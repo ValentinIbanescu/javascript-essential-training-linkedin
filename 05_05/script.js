@@ -67,3 +67,39 @@ console.log(document.querySelector("img").getAttribute("title"));
 document.querySelector("img").removeAttribute("title");
 
 console.log(document.querySelector("img").getAttribute("alt"));
+
+document.querySelector("h1").className;
+
+document.querySelector("h1").className = "new-class";
+
+console.log(
+  `List classes: ${document.querySelector("ul li:first-of-type").classList}`
+);
+
+document.querySelector("ul li:first-of-type").classList.add("new-class");
+
+console.log(
+  `New class added: ${document.querySelector("ul li:first-of-type").classList}`
+);
+
+document.querySelector("ul li:first-of-type").classList.remove("new-class");
+
+console.log(
+  `Remove class: ${document.querySelector("ul li:first-of-type").classList}`
+);
+
+document.querySelector("ul li:first-of-type").classList.toggle("new-class");
+
+console.log(
+  `New class toggle: ${document.querySelector("ul li:first-of-type").classList}`
+);
+
+document.querySelector("ul li:first-of-type").classList.toggle("new-class");
+
+document
+  .querySelector("ul li:first-of-type")
+  .classList.replace("packprop", "new-class");
+
+console.log(
+  `Replace class: ${document.querySelector("ul li:first-of-type").classList}`
+);
