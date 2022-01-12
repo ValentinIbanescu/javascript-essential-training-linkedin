@@ -1,3 +1,40 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: grey;
+  padding: 0 20px;
+}
+
+.logo {
+  flex: 0 0 20%;
+  align-items: center;
+  padding: 20px 0;
+  height: 40px;
+}
+
+.logo > img {
+  height: 40px;
+}
+
+.container {
+  flex: 5;
+  height: 80px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
