@@ -37,3 +37,9 @@ deskArray.splice(deskArray.indexOf(deskArray.find((x) => x.length > 5)), 1);
 
 console.log(deskArray);
 console.log(deskArray.length);
+
+let newArray = Array(5);
+newArray.push("new");
+newArray.unshift("first");
+newArray[1] = "second";
+console.log(newArray);
