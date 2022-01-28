@@ -55,6 +55,12 @@ const newStrapLength = (strapArray) => {
 
     // Add form to the end of the list element
     listElement.append(lengthForm);
+    listElement.querySelectorAll("button").forEach((button) => {
+      button.addEventListener("click", (ev) => {
+        console.log(ev);
+        listElement.setAttribute(`[data-side]=${side}`, "test");
+      });
+    });
   });
 };
 
@@ -93,6 +99,7 @@ const backpackList = backpackObjectArray.map((backpack) => {
   `;
 
   let strapLengths = backpackArticle.querySelectorAll(".backpack__strap");
+  console.log(strapLengths);
   newStrapLength(strapLengths);
 
   let button = backpackArticle.querySelector(".lid-toggle");
