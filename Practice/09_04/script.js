@@ -6,8 +6,6 @@
  * - Add an event listener to a specific key on the keyboard to change the background color of the whole page - from dark to light and back again.
  */
 
-// * - Use an event listener and CSS either inline or through an added class
-// to draw a highlight around the entire grid when you hover over it with your mouse.
 let entireGrid = document.querySelector(".grid");
 console.log(entireGrid);
 entireGrid.addEventListener("mouseenter", (event) => {
